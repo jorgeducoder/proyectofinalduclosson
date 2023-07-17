@@ -39,6 +39,47 @@
       /*padding-right: 0px; no soluciona el scroll a la derecha*/
   }
 
+  .mi-estilo-hexp {
+    margin-top: 100px;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 1.1;
+    font-family: sans-serif;
+  
+  }
+
+  .mi-estilo-pexp {
+    line-height: 30px;
+    padding: 25px 100px 0px 0px;
+    font-size: 20px;
+    font-family: sans-serif;
+    justify-content: left;
+  
+  }
+
+  mi-f-padd-exp {
+    padding-top: 10px;
+    padding-right: 50px;
+  }
+
+  /* efecto sombra*/
+.mi-shadow-exp {
+   
+    box-shadow: 30px 30px rgba(156, 154, 226, 0.37);
+  }
+
+  /*.img-txtle-exp {
+   
+      position: relative;
+      width: 40%;
+      height: 80%;
+      background-image: url(../images/duque.jpg);
+      background-size: cover;
+      /*display: flex;*/
+      /*justify-content: center;
+      
+  }*/
+
   @media (max-width: 800px) {
     .tcontorno {
         
