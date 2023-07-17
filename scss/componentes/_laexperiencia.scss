@@ -68,17 +68,34 @@
     box-shadow: 30px 30px rgba(156, 154, 226, 0.37);
   }
 
-  /*.img-txtle-exp {
+.img-txtle-duque {
    
       position: relative;
-      width: 40%;
-      height: 80%;
+      /*width: 200px;*/
+      height: 700px;
       background-image: url(../images/duque.jpg);
       background-size: cover;
-      /*display: flex;*/
-      /*justify-content: center;
+      margin-left: 100px;
+      margin-top: 50px;
+     
       
-  }*/
+  }
+
+  .mi-estilo-hduque {
+    margin-top: 200px;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 1.1;
+    font-family: sans-serif;
+  }
+
+  .mi-estilo-pduque {
+    line-height: 30px;
+    padding: 25px 100px 0px 0px;
+    font-size: 20px;
+    font-family: sans-serif;
+    justify-content: left;
+  }
 
   @media (max-width: 800px) {
     .tcontorno {
@@ -135,11 +152,36 @@
         
           /* efecto sombra*/
         .mi-shadow-exp {
-           
             box-shadow: 20px 20px rgba(156, 154, 226, 0.37);
-          }
+        }
         
-
+        .img-txtle-duque {
+            position: relative;
+            /*width: 200px;*/
+            height: 400px;
+            background-image: url(../images/duque.jpg);
+            background-size: cover;
+            margin: 20px 10px 20px;
+            
+        }
+      
+        .mi-estilo-hduque {
+          margin-top: 20px;
+          font-weight: 400;
+          font-size: 1.5rem;
+          line-height: 1.1;
+          font-family: sans-serif;
+          padding-left: 20px;
+        }
+      
+        .mi-estilo-pduque {
+          line-height: 20px;
+          padding: 10px 20px 20px 20px;
+          font-size: 15px;
+          font-family: sans-serif;
+         
+        }
+      
     } 
     
     
