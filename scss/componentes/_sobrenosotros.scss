@@ -1,0 +1,87 @@
+/* SOBRE NOSOTROS HTML */
+
+.mi-f-padd {
+  padding-top: 100px;
+  padding-right: 50px;
+}
+
+/* efecto sombra*/
+.mi-shadow {
+  border-radius: 50%;
+  box-shadow: 60px -40px rgb(78, 77, 77);
+}
+
+.mi-estilo-h {
+  margin-top: 250px;
+  font-weight: 400;
+  font-size: 4.5rem;
+  line-height: 1.1;
+  font-family: roboto;
+
+}
+
+.mi-estilo-p {
+  line-height: 40px;
+  padding: 25px 100px 0px 0px;
+  font-size: 20px;
+  font-family: roboto;
+
+}
+
+.mi-v-snos {
+  margin-bottom: 60px;
+  margin-right: 60px;
+
+  video {
+    border: double black;
+  }
+}
+
+/*agrego 3 clases para SN en la media query*/
+@media (max-width: 800px) {
+
+  .margen0 {
+    margin: 30px, 0px, 0px, 0px !important;
+  }
+
+ .mi-vp {
+    width: 100vw;
+  }
+
+  .mi-f-padd {
+    padding: 35px;
+  }
+
+  .mi-f-padd {
+    img {
+      height: auto;
+      
+    }
+  }
+
+  .mi-estilo-h {
+    margin-top: 40px !important;
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 2rem;
+    
+    /*line-height: 1.1;*/
+  }
+
+  .mi-estilo-p {
+    padding: 0px !important;
+    line-height: 25px;
+    font-weight: 200px;
+    font-size: 15px;
+  }
+
+  .mi-shadow {
+    border-radius: 50%;
+    box-shadow: 30px -20px rgb(78, 77, 77);
+  }
+
+  .mi-v-snos {
+    
+    margin-right: 0%
+  }
+}

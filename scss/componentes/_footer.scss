@@ -1,0 +1,56 @@
+/* TRABAJANDO EN EL FOOTER*/
+
+.mi-deco-pie
+    {
+        
+        font-size: large;
+        font-weight: bold;
+        padding: 30px 150px 30px 150px;
+    }
+
+.mi-deco-mail
+{
+    /*text-decoration: underline;*/
+    color: black;
+}
+
+
+    
+
+/* media para el footer*/
+@media (max-width: 992px)
+{
+.mi-margen
+    {
+        margin-left: 10px;
+    }
+.mi-deco-pie{
+        text-align: center !important;
+        padding: 0px;
+    p{
+        padding-bottom: 25px; 
+    }
+    
+}
+.mail-padd{
+    padding-bottom: 30px;  
+}
+
+
+
+.mi-deco-redes
+    {
+       display: flex;
+       justify-content: center;
+    }
+    ul{
+        li{
+            padding-bottom: 15px;
+        }
+    }
+.width-resp{
+    width: 40px;
+    height: 40px;
+}
+
+}

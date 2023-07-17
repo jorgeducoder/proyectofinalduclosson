@@ -1,0 +1,59 @@
+/* LA DEGUSTACION HTML */
+
+
+.img-txt-ld{
+      /*position: absolute; se ve la imagen pero el footer se coloca por encima*/ 
+      width: 100%;
+      height: auto;
+      background-image: url(../images/degustaciona25opacity.png);
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      
+    
+      h2 {
+        color: black;
+        font-size: 55px;
+        font-family: 'Times New Roman';
+        font-weight: bold;
+        position: absolute;
+       /*position: relative; con posicion relative en H y P el H ocupa todo el ancho de la pantalla y baja el P */
+        padding: 6rem 0rem 0rem 14rem;
+        }
+
+    p {
+        color: black;
+        font-size: 21px;
+       /*position: absolute;*/
+        position: relative;
+        padding: 6rem 14rem 0rem 55rem;
+        text-align: center;
+        line-height: 30px;
+        font-weight: bold;
+    }
+}
+ /*agrego estilos para LD en la media query*/
+ @media (max-width: 800px) {
+   
+    .img-txt-ld{
+          
+        h2 {
+            color: black;
+            font-size: 35px;
+            font-family: 'Times New Roman';
+            font-weight: bold;
+            /*position: absolute; sin posicionamiento en H y P son responsivos*/
+            padding: 20px 0rem 0rem 3rem;
+          
+            }
+    
+        p {
+            color: black;
+            font-size: 18px;
+           /* position: absolute;*/
+            padding: 70px 20px 0px 20px;
+            text-align: center;
+            line-height: 25px;
+        }
+    }
+}
