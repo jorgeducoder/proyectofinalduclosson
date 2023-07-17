@@ -106,5 +106,40 @@
                  font-weight: bold;
                  font-family: roboto;
              }
-        }  
-    }    
+        }
+        .mi-estilo-hexp {
+            margin-top: 50px;
+            font-weight: 400;
+            font-size: 1.5rem;
+            font-family: sans-serif;
+            padding-left: 20px;
+        }
+
+        .mi-estilo-pexp {
+            line-height: 20px;
+            padding: 25px 30px 10px 20px;
+            font-size: 15px;
+            font-family: sans-serif;
+            justify-content: left;
+          
+          }
+        
+          .mi-vp-exp {
+            width: 80%;
+          }
+
+          mi-f-padd-exp {
+           
+            padding: 20px 30px 10px 10px;
+          }
+        
+          /* efecto sombra*/
+        .mi-shadow-exp {
+           
+            box-shadow: 20px 20px rgba(156, 154, 226, 0.37);
+          }
+        
+
+    } 
+    
+    
