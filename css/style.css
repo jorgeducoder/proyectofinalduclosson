@@ -366,7 +366,9 @@ mi-f-padd-exp {
 
 /* efecto sombra*/
 .mi-shadow-exp {
-  box-shadow: 30px 30px rgba(156, 154, 226, 0.37);
+  box-shadow: 20px 20px rgba(22, 22, 22, 0.952);
+  padding-bottom: 15px;
+  padding-right: 15px;
 }
 
 .img-txtle-duque {
@@ -440,7 +442,7 @@ mi-f-padd-exp {
   }
   /* efecto sombra*/
   .mi-shadow-exp {
-    box-shadow: 20px 20px rgba(156, 154, 226, 0.37);
+    box-shadow: 20px 20px rgba(22, 22, 22, 0.952);
   }
   .img-txtle-duque {
     position: relative;
