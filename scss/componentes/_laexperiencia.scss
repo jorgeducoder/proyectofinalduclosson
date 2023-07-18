@@ -32,7 +32,7 @@
       position: relative;
       width: 100%;
       height: auto;
-      background-image: url(../images/degustaciona25.jpg);
+      background: url(../images/degustaciona25.jpg);
       background-size: cover;
       display: flex;
       justify-content: center;
@@ -56,6 +56,9 @@
     justify-content: left;
   
   }
+  .margen0-exp{
+    margin-top: 2rem;
+  }
 
   mi-f-padd-exp {
     padding-top: 10px;
@@ -65,7 +68,7 @@
   /* efecto sombra*/
 .mi-shadow-exp {
    
-    box-shadow: 20px 20px rgba(22, 22, 22, 0.952);
+    box-shadow: 20px 20px rgba(27, 23, 51, 0.822);
     padding-bottom: 15px;
     padding-right: 15px;
   }
@@ -99,6 +102,28 @@
     justify-content: left;
   }
 
+/* Subir al top de la pagina
+.ir-arriba {
+  position: fixed;
+  z-index: 100000;
+}
+
+flecha-arriba{
+  height: 64px;
+  width: 64px;
+  margin-left: 0px;
+   margin-right: auto; 
+   margin-top: 0px; 
+   background-image: none; 
+   right: 20px; 
+   bottom: 20px; 
+   padding: 20px; 
+   display: block;
+}
+
+data-href{
+  cursor: pointer;
+}*/
   @media (max-width: 800px) {
     
     .tcontorno {

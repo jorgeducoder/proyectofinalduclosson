@@ -336,7 +336,7 @@ impotant no aparece la palabra Inicio cuando colapsa*/
   position: relative;
   width: 100%;
   height: auto;
-  background-image: url(../images/degustaciona25.jpg);
+  background: url(../images/degustaciona25.jpg);
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -359,6 +359,10 @@ impotant no aparece la palabra Inicio cuando colapsa*/
   justify-content: left;
 }
 
+.margen0-exp {
+  margin-top: 2rem;
+}
+
 mi-f-padd-exp {
   padding-top: 10px;
   padding-right: 50px;
@@ -366,7 +370,7 @@ mi-f-padd-exp {
 
 /* efecto sombra*/
 .mi-shadow-exp {
-  box-shadow: 20px 20px rgba(22, 22, 22, 0.952);
+  box-shadow: 20px 20px rgba(27, 23, 51, 0.822);
   padding-bottom: 15px;
   padding-right: 15px;
 }
@@ -397,6 +401,28 @@ mi-f-padd-exp {
   justify-content: left;
 }
 
+/* Subir al top de la pagina
+.ir-arriba {
+  position: fixed;
+  z-index: 100000;
+}
+
+flecha-arriba{
+  height: 64px;
+  width: 64px;
+  margin-left: 0px;
+   margin-right: auto; 
+   margin-top: 0px; 
+   background-image: none; 
+   right: 20px; 
+   bottom: 20px; 
+   padding: 20px; 
+   display: block;
+}
+
+data-href{
+  cursor: pointer;
+}*/
 @media (max-width: 800px) {
   .tcontorno {
     width: 80%;
@@ -491,10 +517,60 @@ mi-f-padd-exp {
   font-size: 21px;
   /*position: absolute;*/
   position: relative;
-  padding: 6rem 14rem 0rem 55rem;
+  padding: 6rem 14rem 0rem 54rem;
   text-align: center;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: normal;
+}
+
+/*estilos seccion 2 tres imagenes*/
+.margen0-deg {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mi-vp-deg {
+  width: 70%;
+}
+
+.mi-estilo-hdeg {
+  margin-top: 100px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.1;
+  font-family: sans-serif;
+}
+
+.mi-estilo-pdeg {
+  line-height: 30px;
+  padding: 25px 0px 0px 0px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.mi-estilo-pdeg1 {
+  margin: 0px 0px 0px 120px;
+}
+
+.mi-estilo-pdeg2 {
+  margin: 0px 50px 20px 50px;
+}
+
+.mi-estilo-pdeg3 {
+  margin: 0px 120px 0px 0px;
+}
+
+mi-f-padd-deg {
+  padding-top: 10px;
+  padding-right: 50px;
+}
+
+/* efecto sombra*/
+.mi-shadow-deg {
+  box-shadow: 10px 50px rgba(8, 17, 8, 0.822);
+  padding-bottom: 20px;
+  padding-right: 15px;
 }
 
 /*agrego estilos para LD en la media query*/
@@ -515,13 +591,15 @@ mi-f-padd-exp {
     text-align: center;
     line-height: 25px;
   }
+  .mi-mar-ult {
+    margin: 0px 0px 100px 0px;
+  }
 }
 /* LA UBICACION HTML */
-section {
-  /* margin: 2rem 0rem 0rem 4rem;*/
-  margin: 2rem 0rem 0rem 0rem;
-}
-
+/*section {
+     margin: 2rem 0rem 0rem 4rem;
+    margin: 2rem 0rem 0rem 0rem;
+}*/
 .mi-margen-carous {
   margin-top: 60px;
   margin-bottom: 60px;
