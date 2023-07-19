@@ -1,0 +1,711 @@
+.img-txt-inicio .parrafo-centrado h1 {
+  font-size: 4rem;
+  padding-bottom: 40px;
+  font-weight: bold;
+  font-family: roboto;
+}
+
+.img-txt-inicio .parrafo-centrado p {
+  font-size: 25px;
+  font-weight: 500px;
+  font-family: roboto;
+  line-height: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /*text-decoration: none;*/
+  list-style-type: none;
+  font-family: roboto opensans;
+  /*overflow-x: map-get($inicio-header, oflowx); lo tengo que sacar porque rompe el header en el responsive*/
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-size: cover;
+  background-color: white;
+  /* position: fixed; no va porque la img le pasa por arriba al menu
+   y no scrolea */
+  top: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img {
+  /* este margin left lo tengo que sacar cuando todos sean 
+  responsive, se repite con el de abajo*/
+  margin-left: 240px;
+  margin-right: 100px;
+}
+
+/* margin-left: 240px;  Lo saco para que el icono en celu se corra 
+a la izquierd en la media query, falta centrarlo y ajustar el hamburguer*/
+.navbar-icono-mio {
+  background-image: url(.././images/hamburgermenu_120234.svg);
+}
+
+.el-menu ul li a {
+  color: black;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 30px !important;
+  padding-right: 30px !important;
+}
+.el-menu ul li a:hover {
+  color: rgb(121, 100, 241) !important; /*si no
+pongo important no funciona el hover en Inicio*/
+}
+
+/* la media query es para el menu hamburguer y otras secciones que lo requieran */
+@media (max-width: 800px) {
+  /* corre el icono a la izquierda*/
+  header img {
+    margin-left: 0px;
+    margin-right: 100px;
+  }
+  .navcollapse {
+    /* con relative tira para abajo el carousel*/
+    position: absolute;
+    top: 77px;
+    left: 0;
+    /*En elementos que se superponen los de mayor z-index 
+    cubren los de menor valor*/
+    z-index: 1;
+    background-color: black;
+    width: 70%;
+    height: 100vh;
+    opacity: 0.8;
+  }
+  .el-menu ul li a {
+    color: white !important; /* si no pongo el 
+impotant no aparece la palabra Inicio cuando colapsa*/
+  }
+}
+/* TRABAJANDO EN EL FOOTER*/
+.mi-deco-pie {
+  font-size: large;
+  font-weight: bold;
+  padding: 30px 150px 30px 150px;
+}
+
+.mi-deco-mail {
+  /*text-decoration: underline;*/
+  color: black;
+}
+
+/* media para el footer*/
+@media (max-width: 992px) {
+  .mi-margen {
+    margin-left: 10px;
+  }
+  .mi-deco-pie {
+    text-align: center !important;
+    padding: 0px;
+  }
+  .mi-deco-pie p {
+    padding-bottom: 25px;
+  }
+  .mail-padd {
+    padding-bottom: 30px;
+  }
+  .mi-deco-redes {
+    display: flex;
+    justify-content: center;
+  }
+  ul li {
+    padding-bottom: 15px;
+  }
+  .width-resp {
+    width: 40px;
+    height: 40px;
+  }
+}
+/* trabajando en el main*/
+.img-txt-inicio {
+  /* Contenedor definiendo en el Div una clase */
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-image: url(../images/imgini4.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  /*padding-right: 0px; no soluciona el scroll a la derecha*/
+}
+.img-txt-inicio .parrafo-centrado {
+  color: white;
+  width: 70%;
+  height: auto;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  text-align: center;
+  padding: 150px;
+  top: 100px;
+  left: 400px;
+  font-weight: bold;
+  font-family: roboto;
+}
+/* botones */
+.btn-grupo {
+  padding-top: 20px;
+}
+
+.btn-grupo .boton {
+  background-color: transparent;
+  border: 3px solid white;
+  color: white;
+  padding: 12px 26px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: roboto;
+  cursor: pointer;
+  border-radius: 30px;
+  justify-content: center;
+}
+
+.btn-grupo .boton:not(:last-child) {
+  margin-right: 10px;
+}
+
+.btn-grupo .boton:hover {
+  background-color: white;
+  color: black;
+}
+
+.i1 {
+  /*padding: 20px 0px 0px 0px;*/
+  /*background-size: 200px 200px;*/
+  display: flex;
+  justify-content: space-around;
+}
+
+.i2 {
+  /*background-size: 800px 800px;*/
+  /*display: inline-flex;
+  justify-content: space-around;*/
+  padding: 50px 50px 50px 50px;
+  border: 2px solid black;
+  text-align: center;
+  margin-top: -50px;
+}
+
+.i1 img:hover {
+  cursor: pointer;
+}
+
+.t-ini-h {
+  color: black;
+  font-size: 60px;
+  font-style: roboto;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.t-ini-p {
+  color: black;
+  font-size: 24px;
+  justify-content: center;
+  text-align: center;
+  padding: 30px 350px 30px 350px;
+}
+
+#galeria .col-lg-4 {
+  margin: 0 !important;
+  padding: 10px;
+}
+
+#galeria img {
+  width: 100%;
+  height: 350px;
+}
+
+#galeria img:hover {
+  border: 3px solid white;
+}
+
+.estilo-l1 h3 {
+  color: white;
+  font-size: 60px;
+  font-style: roboto;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/*agrego estilos para inicio en la media query*/
+@media (max-width: 800px) {
+  .img-txt-inicio {
+    background-image: url(../images/imginiresp.jpg);
+    background-size: cover;
+    padding: 0px;
+  }
+  .img-txt-inicio .parrafo-centrado {
+    /*top: 35%;*/
+    width: 95%;
+    /*height: 95%;*/
+    /*height: auto; no cambia nada si lo saco*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+    /*top: 20px;
+    left: 20px;*/
+    font-family: "Times New Roman", Times, serif;
+  }
+  .img-txt-inicio .parrafo-centrado h1 {
+    font-size: 3rem;
+    padding-bottom: 10px;
+  }
+  .img-txt-inicio .parrafo-centrado p {
+    font-size: 25px;
+  }
+  .btn-grupo .boton {
+    background-color: white;
+    border: 3px solid black;
+    color: black;
+    font-size: 14px;
+    border: 3px;
+  }
+  .btn-grupo .boton:not(:last-child) {
+    margin-right: 5px;
+  }
+  .btn-grupo {
+    padding-top: 10px;
+  }
+  .btn-grupo .boton:hover {
+    background-color: 0FFFFFF;
+    color: black;
+  }
+  .i1 {
+    display: block;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: -50px;
+  }
+  .i2 {
+    margin-top: 20px;
+  }
+  .t-ini-h {
+    font-size: 30px;
+    font-style: roboto;
+  }
+  .t-ini-p {
+    font-size: 18px;
+    padding: 20px 10px 30px 10px;
+  }
+}
+/* la experiencia html */
+.ovflow0 {
+  overflow-x: hidden;
+}
+
+.tcontorno {
+  width: 60%;
+  height: auto;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  border: 7px solid white;
+  text-align: center;
+  padding: 80px;
+  top: 100px;
+  left: 400px;
+}
+.tcontorno h2 {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.tcontorno p {
+  color: white;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.img-txtle {
+  /* Contenedor definiendo en el Div una clase */
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-image: url(../images/degustaciona25.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  /*padding-right: 0px; no soluciona el scroll a la derecha*/
+}
+
+.mi-estilo-hexp {
+  margin-top: 100px;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 1.1;
+  font-family: sans-serif;
+}
+
+.mi-estilo-pexp {
+  line-height: 30px;
+  padding: 25px 100px 0px 0px;
+  font-size: 20px;
+  font-family: sans-serif;
+  justify-content: left;
+}
+
+.margen0-exp {
+  margin-top: 2rem;
+}
+
+mi-f-padd-exp {
+  padding-top: 10px;
+  padding-right: 50px;
+}
+
+/* efecto sombra*/
+.mi-shadow-exp {
+  box-shadow: 20px 20px rgba(27, 23, 51, 0.822);
+  padding-bottom: 15px;
+  padding-right: 15px;
+}
+
+.img-txtle-duque {
+  position: relative;
+  /*width: 200px;*/
+  height: 700px;
+  background-image: url(../images/duque.jpg);
+  background-size: cover;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+.mi-estilo-hduque {
+  margin-top: 200px;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 1.1;
+  font-family: sans-serif;
+}
+
+.mi-estilo-pduque {
+  line-height: 30px;
+  padding: 25px 100px 0px 0px;
+  font-size: 20px;
+  font-family: sans-serif;
+  justify-content: left;
+}
+
+/* Subir al top de la pagina
+.ir-arriba {
+  position: fixed;
+  z-index: 100000;
+}
+
+flecha-arriba{
+  height: 64px;
+  width: 64px;
+  margin-left: 0px;
+   margin-right: auto; 
+   margin-top: 0px; 
+   background-image: none; 
+   right: 20px; 
+   bottom: 20px; 
+   padding: 20px; 
+   display: block;
+}
+
+data-href{
+  cursor: pointer;
+}*/
+@media (max-width: 800px) {
+  .tcontorno {
+    width: 80%;
+    /*height: auto; no cambia nada si lo saco*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 5px solid white;
+    text-align: center;
+    padding: 10px;
+    top: 20px;
+    left: 20px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .tcontorno h2 {
+    font-size: 30px;
+    font-family: roboto;
+  }
+  .tcontorno p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    font-family: roboto;
+  }
+  .mi-estilo-hexp {
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    padding-left: 20px;
+  }
+  .mi-estilo-pexp {
+    line-height: 20px;
+    padding: 25px 30px 10px 20px;
+    font-size: 15px;
+    font-family: sans-serif;
+    justify-content: left;
+  }
+  .mi-vp-exp {
+    width: 80%;
+  }
+  mi-f-padd-exp {
+    padding: 20px 30px 10px 10px;
+  }
+  /* efecto sombra*/
+  .mi-shadow-exp {
+    box-shadow: 20px 20px rgba(22, 22, 22, 0.952);
+  }
+  .img-txtle-duque {
+    position: relative;
+    /*width: 200px;*/
+    height: 400px;
+    background-image: url(../images/duque.jpg);
+    background-size: cover;
+    margin: 20px 10px 20px;
+  }
+  .mi-estilo-hduque {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.1;
+    font-family: sans-serif;
+    padding-left: 20px;
+  }
+  .mi-estilo-pduque {
+    line-height: 20px;
+    padding: 10px 20px 20px 20px;
+    font-size: 15px;
+    font-family: sans-serif;
+  }
+}
+/* LA DEGUSTACION HTML */
+.img-txt-ld {
+  /*position: absolute; se ve la imagen pero el footer se coloca por encima*/
+  width: 100%;
+  height: auto;
+  background-image: url(../images/degustaciona25opacity.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.img-txt-ld h2 {
+  color: black;
+  font-size: 55px;
+  font-family: "Times New Roman";
+  font-weight: bold;
+  position: absolute;
+  /*position: relative; con posicion relative en H y P el H ocupa todo el ancho de la pantalla y baja el P */
+  padding: 6rem 0rem 0rem 14rem;
+}
+.img-txt-ld p {
+  color: black;
+  font-size: 21px;
+  /*position: absolute;*/
+  position: relative;
+  padding: 6rem 14rem 0rem 54rem;
+  text-align: center;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+/*estilos seccion 2 tres imagenes*/
+.margen0-deg {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mi-vp-deg {
+  width: 70%;
+}
+
+.mi-estilo-hdeg {
+  margin-top: 100px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.1;
+  font-family: sans-serif;
+}
+
+.mi-estilo-pdeg {
+  line-height: 30px;
+  padding: 25px 0px 0px 0px;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.mi-estilo-pdeg1 {
+  margin: 0px 0px 0px 120px;
+}
+
+.mi-estilo-pdeg2 {
+  margin: 0px 50px 20px 50px;
+}
+
+.mi-estilo-pdeg3 {
+  margin: 0px 120px 0px 0px;
+}
+
+mi-f-padd-deg {
+  padding-top: 10px;
+  padding-right: 50px;
+}
+
+/* efecto sombra*/
+.mi-shadow-deg {
+  box-shadow: 10px 50px rgba(8, 17, 8, 0.822);
+  padding-bottom: 20px;
+  padding-right: 15px;
+}
+
+/*agrego estilos para LD en la media query*/
+@media (max-width: 800px) {
+  .img-txt-ld h2 {
+    color: black;
+    font-size: 35px;
+    font-family: "Times New Roman";
+    font-weight: bold;
+    /*position: absolute; sin posicionamiento en H y P son responsivos*/
+    padding: 20px 0rem 0rem 3rem;
+  }
+  .img-txt-ld p {
+    color: black;
+    font-size: 18px;
+    /* position: absolute;*/
+    padding: 70px 20px 0px 20px;
+    text-align: center;
+    line-height: 25px;
+  }
+  .mi-mar-ult {
+    margin: 0px 0px 100px 0px;
+  }
+}
+/* LA UBICACION HTML */
+/*section {
+     margin: 2rem 0rem 0rem 4rem;
+    margin: 2rem 0rem 0rem 0rem;
+}*/
+.mi-margen-carous {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  margin-left: 64px;
+}
+
+.t-lau-h {
+  color: black;
+  font-size: 32px;
+  font-style: initial;
+  /* position: absolute; no puede ir 
+  se posiciona debajo del footer*/
+  /* los saco cuando uso bootstrap
+  padding-top: 10rem;
+  padding-left: 43rem;
+  */
+}
+
+.t-lau-p {
+  color: black;
+  font-size: 20px;
+  /* position: absolute; idem h*/
+  /* los saco cuando uso bootstrap
+  padding: 2rem 20rem 0rem 25rem;
+  text-align: center;*/
+}
+
+/*@media (max-width: 800px) {
+
+    .mi-margen-carous
+
+    /* margen del carousel
+        {
+
+        margin-right: 64px;
+
+    }
+}*/
+/* SOBRE NOSOTROS HTML */
+.mi-f-padd {
+  padding-top: 100px;
+  padding-right: 50px;
+}
+
+/* efecto sombra*/
+.mi-shadow {
+  border-radius: 50%;
+  box-shadow: 60px -40px rgb(78, 77, 77);
+}
+
+.mi-estilo-h {
+  margin-top: 250px;
+  font-weight: 400;
+  font-size: 4.5rem;
+  line-height: 1.1;
+  font-family: roboto;
+}
+
+.mi-estilo-p {
+  line-height: 40px;
+  padding: 25px 100px 0px 0px;
+  font-size: 20px;
+  font-family: roboto;
+}
+
+.mi-v-snos {
+  margin-bottom: 60px;
+  margin-right: 60px;
+}
+.mi-v-snos video {
+  border: double black;
+}
+
+/*agrego 3 clases para SN en la media query*/
+@media (max-width: 800px) {
+  .margen0 {
+    margin: 30px, 0px, 0px, 0px !important;
+  }
+  .mi-vp {
+    width: 100vw;
+  }
+  .mi-f-padd {
+    padding: 35px;
+  }
+  .mi-f-padd img {
+    height: auto;
+  }
+  .mi-estilo-h {
+    margin-top: 40px !important;
+    margin-bottom: 25px;
+    font-weight: 400;
+    font-size: 2rem;
+    /*line-height: 1.1;*/
+  }
+  .mi-estilo-p {
+    padding: 0px !important;
+    line-height: 25px;
+    font-weight: 200px;
+    font-size: 15px;
+  }
+  .mi-shadow {
+    border-radius: 50%;
+    box-shadow: 30px -20px rgb(78, 77, 77);
+  }
+  .mi-v-snos {
+    margin-right: 0%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
