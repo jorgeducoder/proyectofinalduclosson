@@ -57,6 +57,7 @@ a la izquierd en la media query, falta centrarlo y ajustar el hamburguer*/
   padding-left: 30px !important;
   padding-right: 30px !important;
 }
+
 .el-menu ul li a:hover {
   color: rgb(121, 100, 241) !important; /*si no
 pongo important no funciona el hover en Inicio*/
@@ -138,6 +139,7 @@ impotant no aparece la palabra Inicio cuando colapsa*/
   justify-content: center;
   /*padding-right: 0px; no soluciona el scroll a la derecha*/
 }
+
 .img-txt-inicio .parrafo-centrado {
   color: white;
   width: 70%;
@@ -151,6 +153,7 @@ impotant no aparece la palabra Inicio cuando colapsa*/
   font-weight: bold;
   font-family: roboto;
 }
+
 /* botones */
 .btn-grupo {
   padding-top: 20px;
@@ -319,11 +322,13 @@ impotant no aparece la palabra Inicio cuando colapsa*/
   top: 100px;
   left: 400px;
 }
+
 .tcontorno h2 {
   color: white;
   font-size: 3rem;
   font-weight: bold;
 }
+
 .tcontorno p {
   color: white;
   font-size: 28px;
@@ -502,6 +507,7 @@ data-href{
   display: flex;
   justify-content: center;
 }
+
 .img-txt-ld h2 {
   color: black;
   font-size: 55px;
@@ -511,6 +517,7 @@ data-href{
   /*position: relative; con posicion relative en H y P el H ocupa todo el ancho de la pantalla y baja el P */
   padding: 6rem 0rem 0rem 14rem;
 }
+
 .img-txt-ld p {
   color: black;
   font-size: 21px;
@@ -595,6 +602,10 @@ mi-f-padd-deg {
   }
 }
 /* LA UBICACION HTML */
+/*section {
+     margin: 2rem 0rem 0rem 4rem;
+    margin: 2rem 0rem 0rem 0rem;
+}*/
 .mi-margen-carous {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -624,7 +635,14 @@ mi-f-padd-deg {
 
 /*@media (max-width: 800px) {
 
+    .mi-margen-carous
 
+    /* margen del carousel
+        {
+
+        margin-right: 64px;
+
+    }
 }*/
 /* SOBRE NOSOTROS HTML */
 .mi-f-padd {
@@ -657,6 +675,7 @@ mi-f-padd-deg {
   margin-bottom: 60px;
   margin-right: 60px;
 }
+
 .mi-v-snos video {
   border: double black;
 }
@@ -696,5 +715,6 @@ mi-f-padd-deg {
     margin-right: 0%;
   }
 }
+
 
 /*# sourceMappingURL=style.css.map */
